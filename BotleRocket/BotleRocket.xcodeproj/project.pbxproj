@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E6967022750E08C003DD247 /* RestaurantDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6967012750E08B003DD247 /* RestaurantDetailsViewController.swift */; };
 		B8DBB9DA274C23E1008EEE52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DBB9D9274C23E1008EEE52 /* AppDelegate.swift */; };
 		B8DBB9DC274C23E1008EEE52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DBB9DB274C23E1008EEE52 /* SceneDelegate.swift */; };
 		B8DBB9DE274C23E1008EEE52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DBB9DD274C23E1008EEE52 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E6967012750E08B003DD247 /* RestaurantDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsViewController.swift; sourceTree = "<group>"; };
 		B8DBB9D6274C23E1008EEE52 /* BotleRocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BotleRocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8DBB9D9274C23E1008EEE52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8DBB9DB274C23E1008EEE52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				B8DBB9DD274C23E1008EEE52 /* ViewController.swift */,
+				0E6967012750E08B003DD247 /* RestaurantDetailsViewController.swift */,
 				B8DBB9EF274CE84E008EEE52 /* InternetsViewController.swift */,
 				B8DBB9ED274CE398008EEE52 /* BRTabBarController.swift */,
 			);
@@ -186,6 +189,7 @@
 				B8DBB9DA274C23E1008EEE52 /* AppDelegate.swift in Sources */,
 				B8DBBA51274E6AA5008EEE52 /* Location.swift in Sources */,
 				B8DBBA4F274E6A3A008EEE52 /* Contact.swift in Sources */,
+				0E6967022750E08C003DD247 /* RestaurantDetailsViewController.swift in Sources */,
 				B8DBB9DC274C23E1008EEE52 /* SceneDelegate.swift in Sources */,
 				B8DBB9EE274CE398008EEE52 /* BRTabBarController.swift in Sources */,
 				B8DBBA4D274E68EA008EEE52 /* Restaurants.swift in Sources */,
@@ -337,7 +341,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8L3XM94ZAX;
+				DEVELOPMENT_TEAM = 356943W3A6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BotleRocket/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -351,7 +355,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.vucjanac.BotleRocket;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vlastimir.BotleRocket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -366,7 +370,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8L3XM94ZAX;
+				DEVELOPMENT_TEAM = 356943W3A6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BotleRocket/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -380,7 +384,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.vucjanac.BotleRocket;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vlastimir.BotleRocket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

@@ -72,6 +72,7 @@
                                     <outlet property="imageView" destination="B4x-bo-R8q" id="N7p-4T-A0g"/>
                                     <outlet property="label" destination="N8K-hs-WfM" id="EvO-W1-TEZ"/>
                                     <outlet property="type" destination="Ipb-bM-NOq" id="lqD-6N-yHT"/>
+                                    <segue destination="297-rg-XLb" kind="show" identifier="DinerDetails" id="rF3-yi-Ji4"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -86,22 +87,30 @@
             </objects>
             <point key="canvasLocation" x="2198.5507246376815" y="0.6696428571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--Restaurant Details View Controller-->
         <scene sceneID="huF-8M-Iu7">
             <objects>
-                <viewController id="297-rg-XLb" sceneMemberID="viewController">
+                <viewController id="297-rg-XLb" customClass="RestaurantDetailsViewController" customModule="BotleRocket" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C4w-Ok-d7h">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="s9f-XA-X6q">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="907"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="s9f-XA-X6q">
+                                <rect key="frame" x="0.0" y="88" width="414" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="dgJ-qn-hx6"/>
+                                </constraints>
                             </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GDm-EE-jOx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GDm-EE-jOx" firstAttribute="trailing" secondItem="s9f-XA-X6q" secondAttribute="trailing" id="BtY-Ge-84s"/>
+                            <constraint firstItem="s9f-XA-X6q" firstAttribute="top" secondItem="GDm-EE-jOx" secondAttribute="top" id="swL-4e-OLU"/>
+                            <constraint firstItem="s9f-XA-X6q" firstAttribute="leading" secondItem="GDm-EE-jOx" secondAttribute="leading" id="vJl-l9-shq"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="EFF-9n-2hl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PzW-VJ-U81" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -110,7 +119,6 @@
         <!--Restaurants-->
         <scene sceneID="9y6-jt-oln">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="J7m-II-QJy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="H3z-WB-8pF" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Restaurants" id="Vyc-hu-IPT">
                         <imageReference key="image" image="fork.knife.circle" catalog="system" symbolScale="default"/>
@@ -125,6 +133,7 @@
                         <segue destination="LhQ-A5-gbW" kind="relationship" relationship="rootViewController" id="KcA-gR-71m"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J7m-II-QJy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1493" y="1"/>
         </scene>
@@ -134,6 +143,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="UGS-lF-39C" customClass="BRTabBarController" customModule="BotleRocket" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sm9-Fp-cFW">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

@@ -1,11 +1,22 @@
-////
-////  StoreCell.swift
-////  Zadatak2
-////
-////  Created by Aleksandar Stojanovic on 9/27/21.
-////
 //
-//import UIKit
+//  StoreCell.swift
+//  Zadatak2
+//
+//  Created by Aleksandar Stojanovic on 9/27/21.
+//
+
+import UIKit
+
+
+class ViewControllerClass: UIViewController {
+
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var storeNameLabel: UILabel!
+    @IBOutlet weak var cityNameLabel: UILabel!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}
 //
 //class StoreCell: UITableViewCell {
 //

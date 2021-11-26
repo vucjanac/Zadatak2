@@ -7,10 +7,8 @@
 
 import Foundation
 
-
 struct Store: Codable {
-    
-    
+    var storeLogoURL: String
     var name: String
     var city: String
     var address: String
@@ -19,4 +17,7 @@ struct Store: Codable {
     var phone: String
 }
 
+struct Stores: Codable {
+    var stores: [Store]
+}
 

@@ -6,11 +6,10 @@
 //
 
 import UIKit
+import SwiftUI
 
 class ViewController: UITableViewController {
     var stores = [Store]()
-    var storeLogoURL = UIImage()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,20 +20,16 @@ class ViewController: UITableViewController {
                 parse(json: data)
             }
         }
-}
-    
-    func parse(json: Data) {
-        let decoder = JSONDecoder()
         
-        if let jsonStore = try? decoder.decode(Stores.self, from: json) {
-            stores = jsonStore.stores
-            tableView.reloadData()
+        func parse(json: Data) {
+            let decoder = JSONDecoder()
+            
+            if let jsonStore = try? decoder.decode(Stores.self, from: json) {
+                stores = jsonStore.stores
+                tableView.reloadData()
+            }
         }
-}
-    
-    
-    
-    
+    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return stores.count
@@ -47,5 +42,47 @@ class ViewController: UITableViewController {
         cell.detailTextLabel?.text = store.city
         return cell
     }
+    
+    
+    
+    //    func fetchImage(url: String) -> UIImage {
+    //
+    //        let urlString = URL(string: url)
+    //
+    //        var image = UIImage()
+    //
+    //        if let imageData: NSData = NSData(contentsOf: urlString!) {
+    //            image = UIImage(data: imageData as Data)!
+    //        }
+    //
+    //        return image
+    //
+    //    }
+    
+    //    func downloadJSON() {
+    //        print("Successful")
+    //
+    //    }
+    //
+    //    func downloadJSON(completed: @escaping () -> ()) {
+    //
+    //        let url = URL(string: "http://sandbox.bottlerocketapps.com/BR_Android_CodingExam_2015_Server/stores.json")
+    //
+    //        URLSession.shared.dataTask(with: url!) {
+    //
+    //            (data, response, error) in
+    //            if error == nil {
+    //                do {
+    //                    self.stores = try JSONDecoder().decode([Store].self, from: data!)
+    //
+    //                    DispatchQueue.main.async {
+    //                        completed()
+    //                    }
+    //
+    //                } catch {
+    //                    print("JSON Error")
+    //                }
+    //            }
+    //        }.resume()
+    //    }
 }
-

@@ -11,10 +11,10 @@ struct Diner: Codable {
     let name: String?
     let backgroundImageURL: String
     let category: String
-    let contact: String?
-    let location: String
+    let contact: Contact?
+    let location: Location?
 }
 
-struct Diners: Codable {
+struct DinersResponse: Codable {
     let restaurants: [Diner]
 }
